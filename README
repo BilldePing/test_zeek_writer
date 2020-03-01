@@ -3,3 +3,15 @@ Zeek::Ascii2Writer
 =================================
 
 <Insert plugin documentation here.>
+
+=================================
+
+running zeek :
+zeek -i eth0 -e "redef Log::default_writer=Log::WRITER_ASCII2;"
+
+results :
+<command line>, line 3: listening on eth0
+
+Hello from Ascii2Writer!
+zeek: symbol lookup error: /usr/local/zeek/lib/zeek/plugins/packages/Ascii2Writer//lib/Zeek-Ascii2Writer.linux-x86_64.so: undefined symbol: _ZN7logging6writer6Ascii2C1EPNS_14WriterFrontendE
+
