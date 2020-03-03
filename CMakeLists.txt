@@ -6,7 +6,7 @@ project(ZeekPluginAscii2Writer)
 include(ZeekPlugin)
 
 zeek_plugin_begin(Zeek Ascii2Writer)
-zeek_plugin_cc(src/Plugin.cc)
+zeek_plugin_cc(src/Plugin.cc src/Ascii2.cc)
 zeek_plugin_bif(src/ascii2writer.bif)
 zeek_plugin_dist_files(README CHANGES COPYING VERSION)
 zeek_plugin_end()
